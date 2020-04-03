@@ -106,7 +106,7 @@ healthcheck(callback) {
        callback(null,error);
 
    } else {
-       this.emitOffline();
+       this.emitOnline();
        log.debug('${this.id} is ONLINE')
        callback(result,null);
    }
